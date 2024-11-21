@@ -1,0 +1,144 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block content %}
+        <!-- # site main content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+               <section class="s-pageheader pageheader">
+                    <div class="row">
+                        <div class="column xl-12">
+                            <h1 class="page-title">
+                                <span class="page-title__small-type text-pretitle">Services</span>
+                                High-Impact Services
+                            </h1>
+                            
+                            <!--start skill icon -->
+                            <ul class="s-about__social social-list">
+                                <li>
+                                    <img style="max-width: 60px;" src="{% static 'images/python.png' %}" alt="">
+                                </li>
+                                <li>
+                                    <img style="max-width: 60px;" src="{% static 'images/Django.png' %}" alt="">
+                                </li>
+                                <li>
+                                    <img style="max-width: 60px;" src="{% static 'images/git.png' %}" alt="">
+                                </li>
+                                <li>
+                                    <img style="max-width: 60px;" src="{% static 'images/sql.png' %}" alt="">
+                                    
+                                </li>
+                            </ul> <!-- end s-skill icon -->
+
+                        </div>
+                    </div>
+               </section> <!-- pageheader -->  
+
+               <section class="s-pagecontent pagecontent">
+
+                    <div class="row pageintro">
+                        <div class="column xl-6 lg-12">
+                            <h2 class="text-display-title">Powerful solutions to elevate your business success</h2>
+                        </div>
+                        <div class="column xl-6 lg-12 u-flexitem-x-right">
+                            <p class="lead">
+                                Welcome to my protfolio, your trusted partner in building solutions that drive growth and success. I specialize in offering tailored services designed to meet your unique business needs, from cutting-edge web development to seamless digital transformation strategies.
+                                <br>
+                                Whether you're looking to enhance your online presence, streamline operations, or create engaging user experiences, I'm here to turn your vision into reality. With a focus on innovation, quality, and results, my goal is to empower your business to thrive in today's competitive landscape.
+                                <br>
+                                Explore my services below and discover how I can help you achieve your business goals. Let’s create something extraordinary together!. 
+                            </p>
+                        </div>                       
+                    </div>  <!-- pageintro -->       
+
+                    <div class="row">
+                        <div class="column xl-12 grid-block">             
+                            
+                            <div class="grid-full grid-list-items list-items show-ctr">
+                                
+                                <div class="grid-list-items__item list-items__item">
+                                    <div class="list-items__item-header">
+                                        <h3 class="list-items__item-title">Web App Development</h3>
+                                    </div>
+                                    <div class="list-items__item-text">
+                                        <p>
+                                         Build robust, scalable, and user-friendly web applications tailored to your business needs. I specialize in creating solutions that deliver seamless performance, responsive designs, and enhanced user experiences, ensuring your application stands out in the digital landscape.
+                                        </p>
+
+                                        <ul class="list-services">
+                                            <li>Python</li>
+                                            <li>Django Framework</li>
+                                            <li>MySQL</li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- end list-items__item -->
+    
+                                <div class="grid-list-items__item list-items__item">
+                                    <div class="list-items__item-header">
+                                        <h3 class="list-items__item-title">E-commerce Solutions
+                                        </h3>
+                                    </div>
+                                    <div class="list-items__item-text">
+                                        <p>
+                                        Build secure, scalable, and user-friendly online stores tailored to your business needs. From seamless payment integration to inventory management and analytics, I provide everything you need to create an engaging and profitable shopping experience.
+                                        </p>
+
+                                        <ul class="list-services">
+                                            <li>Python</li>
+                                            <li>Django Framework</li>
+                                            <li>MySQL</li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- end list-items__item -->
+    
+                                <div class="grid-list-items__item list-items__item">
+                                    <div class="list-items__item-header">
+                                        <h3 class="list-items__item-title">Maintenance & Support
+                                        </h3>
+                                    </div>
+                                    <div class="list-items__item-text">
+                                        <p>
+                                        Keep your website or application running smoothly with regular updates, bug fixes, and technical support. I ensure optimal performance, security, and reliability, so you can focus on growing your business without interruptions.
+                                        </p>
+
+                                        <ul class="list-services">
+                                            <li>Python</li>
+                                            <li>Django Framework</li>
+                                            <li>MySQL</li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- end list-items__item -->
+    
+                            </div> <!-- grid-list-items -->
+                           
+
+                        </div> <!-- end grid-block-->
+                    </div> <!-- end row -->
+
+               </section> <!-- pagecontent -->
+
+
+        </section> <!-- s-content-->
+
+        <!-- # cta
+        ================================================== -->
+        <section id="cta" class="s-cta">
+
+            <div class="row row-x-center text-center">
+                <div class="column xl-8 lg-12">
+
+                    <div class="s-cta__content">
+                        <h2 class="text-display-title">
+                        Get started with a consultation today.
+                        </h2>
+                        <p class="lead">
+                        Ready to take your project to the next level? Let's discuss how I can help bring your ideas to life. Whether you need a custom web application, a robust backend solution, or expert advice, I'm here to assist.
+                        </p>
+                        <a href="{% url 'contact' %}" class="btn btn--primary">Let's Work Together</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section> <!-- end s-cta -->
+{% endblock %}
